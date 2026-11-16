@@ -1,0 +1,9 @@
+{
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/ferramenta/:path*", "destination": "/produto/ferramenta/:path*", "permanent": true },
+    { "source": "/lavadora/:path*", "destination": "/produto/lavadora/:path*", "permanent": true },
+    { "source": "/luminaria/:path*", "destination": "/produto/luminaria/:path*", "permanent": true },
+    { "source": "/serra-marmore/:path*", "destination": "/produto/serra-marmore/:path*", "permanent": true }
+  ]
+}
