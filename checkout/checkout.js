@@ -36,7 +36,7 @@ function resolveOfferId() {
   }
   if (p === "serra-marmore") return "serra-marmore";
   if (p === "lavadora") return "lavadora";
-  return p === "ferramenta" ? "ferramenta" : null;
+  return p && OFFERS[p] ? p : null; // ferramenta, lavadora e produtos do catálogo (ce-001-1 etc.)
 }
 const offerId = resolveOfferId();
 if (!offerId || !OFFERS[offerId]) { location.replace("/"); throw new Error("sem produto"); }
