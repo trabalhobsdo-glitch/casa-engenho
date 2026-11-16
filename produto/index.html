@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Produto | Casa & Engenho</title>
+<meta name="description" content="Produto da Casa & Engenho. Frete grátis para todo o Brasil.">
+<link rel="icon" href="/produto/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/produto/style.css">
+<link rel="stylesheet" href="/natal.css">
+<script src="/tracking.js"></script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="st" viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.5l-5.9 3.2 1.2-6.6L2.5 9.5l6.6-.9z"/></symbol>
+  <symbol id="i-ship" viewBox="0 0 24 24"><path d="M3 6h11v9H3zM14 9h4l3 3v3h-7zM7 18.5a1.8 1.8 0 100-.01M17 18.5a1.8 1.8 0 100-.01" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.3 7.8-8 9-4.7-1.2-8-4.5-8-9V6zM8.5 12l2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M9 7L4 12l5 5M4 12h11a5 5 0 010 10h-3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" transform="translate(0 -3)"/></symbol>
+  <symbol id="i-pix" viewBox="0 0 24 24"><path d="M12 2.8l4.6 4.6-4.6 4.6-4.6-4.6zM12 12l4.6 4.6-4.6 4.6-4.6-4.6zM2.8 12l3.2-3.2M18 15.2L21.2 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+</svg>
+
+<div class="top" aria-label="Informações da loja">
+  <div class="ticker"><div class="ticker-track">
+    <span>🎄 OFERTAS DE NATAL</span><i>•</i><span>✓ PAGAMENTO SEGURO</span><i>•</i><span>🚚 ENVIO APÓS A CONFIRMAÇÃO DO PEDIDO</span><i>•</i>
+    <span>FRETE GRÁTIS PARA TODO O BRASIL</span><i>•</i><span>COMPRA PROTEGIDA</span><i>•</i>
+    <span>ATENDIMENTO CASA & ENGENHO</span><i>•</i><span>🎄 OFERTAS DE NATAL</span><i>•</i><span>✓ PAGAMENTO SEGURO</span><i>•</i>
+    <span>🚚 ENVIO APÓS A CONFIRMAÇÃO DO PEDIDO</span><i>•</i><span>FRETE GRÁTIS PARA TODO O BRASIL</span><i>•</i>
+    <span>COMPRA PROTEGIDA</span><i>•</i><span>ATENDIMENTO CASA & ENGENHO</span><i>•</i>
+  </div></div>
+</div>
+
+<header class="head"><div class="wrap">
+  <a href="/" class="brand"><img src="/assets/logo.png" alt="Casa & Engenho"></a>
+  <nav><a href="/#catalogo">Voltar à loja</a><a href="#sobre">Descrição</a><a href="#loja">A loja</a></nav>
+  <span class="secure"><svg><use href="#i-shield"/></svg> Compra protegida</span>
+</div></header>
+
+<main class="wrap">
+  <p class="crumb"><a href="/">Início</a> &rsaquo; <span id="crumbCat">Produtos</span> &rsaquo; <b id="crumbTitle">Produto</b></p>
+  <div class="nf" id="nf" hidden><h1>Produto não encontrado</h1><p><a class="btn" href="/#catalogo" style="display:inline-block;margin-top:14px">Ver todos os produtos</a></p></div>
+
+  <section class="buy card" id="comprar">
+    <div class="gallery">
+      <div class="thumbs" id="thumbs"></div>
+      <div class="stage">
+        <span class="flag" id="flag" hidden></span>
+        <button class="nav prev" id="prev" aria-label="Foto anterior">&lsaquo;</button>
+        <img id="mainImg" src="/assets/logo.png" alt="" fetchpriority="high">
+        <button class="nav next" id="next" aria-label="Próxima foto">&rsaquo;</button>
+        <span class="count" id="count"></span>
+      </div>
+    </div>
+    <div class="info">
+      <p class="sub">Novo &middot; <b id="catLine">Casa & Engenho</b></p>
+      <h1 id="title">Carregando…</h1>
+      <div class="variants" id="variantsBox" hidden><label for="variant">Selecione a opção</label><select id="variant"></select></div>
+      <div class="price">
+        <s id="oldPrice" hidden></s>
+        <div class="now"><strong id="price">—</strong><em id="off" hidden></em></div>
+        <p><b>Preço promocional por tempo limitado</b></p>
+        <p class="pix"><svg><use href="#i-pix"/></svg> Consulte as opções de pagamento no checkout</p>
+      </div>
+      <div class="ship">
+        <img src="/produto/assets/correios.png" alt="Informações de envio">
+        <div><p class="g">Frete grátis para todo o Brasil</p>
+          <p>Envio após a confirmação do pedido.</p>
+          <p class="mut">Acompanhe as informações de entrega no checkout.</p></div>
+      </div>
+      <p class="stock"><b>Oferta especial por tempo limitado.</b></p>
+      <a class="btn" id="buy" href="#comprar">Comprar agora</a>
+      <ul class="trust">
+        <li><svg><use href="#i-shield"/></svg><span><b>Compra protegida.</b> Seus dados são tratados com segurança durante a compra.</span></li>
+        <li><svg><use href="#i-back"/></svg><span><b>Direito de arrependimento</b> conforme as condições legais aplicáveis.</span></li>
+        <li><svg><use href="#i-ship"/></svg><span><b>Envio acompanhado.</b> Consulte o prazo e o rastreamento após a compra.</span></li>
+      </ul>
+      <div class="seller"><img src="/assets/logo.png" alt=""><div><b>Vendido por Casa & Engenho</b><span>Ferramentas, materiais e utilidades</span></div></div>
+    </div>
+  </section>
+
+  <section class="card" id="sobre">
+    <h2>Descrição do produto</h2>
+    <div class="desc-html" id="description"></div>
+  </section>
+
+  <section class="card about" id="loja">
+    <img src="/assets/fachada.jpg" alt="Fachada da Casa & Engenho" loading="lazy">
+    <div><h2>Casa & Engenho</h2>
+      <p>Ferramentas, materiais elétricos, hidráulicos, tintas e utilidades para obra, oficina e casa, com atendimento claro e uma compra simples, do primeiro clique até a entrega.</p>
+      <p class="mut">Atendimento online</p>
+      <a class="btn alt" id="buy2" href="#comprar">Comprar agora</a>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">
+  <div class="fl"><img src="/assets/logo.png" alt="Casa & Engenho"><p>Ferramentas &middot; Materiais &middot; Utilidades</p></div>
+  <p class="small">Casa & Engenho &middot; CNPJ: preencher dados reais<br>Atendimento: informar contato real</p>
+  <p class="small">&copy; Casa & Engenho. Todos os direitos reservados. Imagens ilustrativas.</p>
+</div></footer>
+
+<div class="sticky"><div><s id="stOld"></s><strong class="pr" id="stPrice"></strong></div><a class="btn" id="buySt" href="#comprar">Comprar agora</a></div>
+<script src="/produto/product.js"></script>
+</body>
+</html>
